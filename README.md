@@ -33,7 +33,21 @@ Since exportation of real data is not approved by IRB, we deciede to use public 
 
 ### Public data
 
-[Public Dataset](https://wiki.cancerimagingarchive.net/display/Public/CT-ORG%3A+CT+volumes+with+multiple+organ+segmentations, "Public Dataset Link")
+We decided to train a model via public dataset and apply our trained model to real data later.
+
+Public dataset was selected considering its similarity to real data.
+
+#### Public data description
+
+This dataset consists of 140 computed tomography (CT) scans, each with five organs labeled in 3D: lung, bones, liver, kidneys and bladder. The brain is also labeled on the minority of scans which show it.
+
+Since the goal of our project is to segment two classes, we decided to use only two of the five classes in public dataset.
+
+About 7000 images were used for training and split by 7:2:1
+
+[Public Dataset Link](https://wiki.cancerimagingarchive.net/display/Public/CT-ORG%3A+CT+volumes+with+multiple+organ+segmentations)
+
+
 ### Data preprocessing
 ### Data Augmentation
 ## Models
