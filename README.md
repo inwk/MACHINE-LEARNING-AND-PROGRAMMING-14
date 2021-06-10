@@ -9,17 +9,6 @@ This project was conducted through machine learning and programming classes at Y
  * [1.2 Goal of project](#12)
 3. [Another paragraph](#paragraph2)
 
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
-
-
-### Sub paragraph <a name="11"></a>
-This is a sub paragraph, formatted in heading 3 style
-
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text
-
-
 ## Problem formulation <a name="1"></a>
 
 ### Motivation <a name="11"></a>
