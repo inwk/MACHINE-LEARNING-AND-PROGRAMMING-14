@@ -14,12 +14,42 @@ While height, weight, and BMI are easily obtainable, muscle and fat mass require
 
 Therefore, if we develop an algorithm which can segment muscles and fat through ct images and calculate each mass and volume to diagnose cancer cachexia, it's a great help in early diagnosis of cancer cachexia and, as a result, it's a great contribution to prolonging the lives of patients.
 
+### Goal of project
+
+Our goal of project is as follows. 
+
+1. Segment muscle and fat from CT images and compare with ground truth image
+2. Calculate each mass and volume 
+3. Developing an algorithm which can diagnose cancer cachexia from the segmented images and calculated mass and volume
+### About prior study
+
+Prior to proceed with the project, prior studies were investigated.
+
 ## Dataset
+
+Basically, segmentation tasks require ct images and corresponding labeled images. In addition, this project also requires information about mass and volumes for each segmented class. 
+
+Since exportation of real data is not approved by IRB, we deciede to use public data instead.
+
+### Public data
+
+[Public Dataset](https://wiki.cancerimagingarchive.net/display/Public/CT-ORG%3A+CT+volumes+with+multiple+organ+segmentations, "Public Dataset Link")
+### Data preprocessing
+### Data Augmentation
 ## Models
+### Semantic segmentation models
+### U-NET
+### DeepLabV3+
 ## How to use
 ## Results
+### Experimental results
+### Segmented area quantification
+### 3D reconstrucition
 ## Conclusion
+### Analysis
 ## Future work
+### Applying to real data
+### 3D model
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
