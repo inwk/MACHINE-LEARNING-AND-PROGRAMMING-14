@@ -2,9 +2,27 @@
 
 This project was conducted through machine learning and programming classes at Yonsei University.
 
-## Problem formulation
+## Table of Contents  
 
-### Motivation
+[1. Problem formulation](#1)
+ * [1.1 Motivation](#11)
+ * [1.2 Goal of project](#12)
+3. [Another paragraph](#paragraph2)
+
+## This is the introduction <a name="introduction"></a>
+Some introduction text, formatted in heading 2 style
+
+
+### Sub paragraph <a name="11"></a>
+This is a sub paragraph, formatted in heading 3 style
+
+## Another paragraph <a name="paragraph2"></a>
+The second paragraph text
+
+
+## Problem formulation <a name="1"></a>
+
+### Motivation <a name="11"></a>
 
 Cancer cachexia is a multifactorial syndrome characterized by ongoing loss of skeletal muscle and fat. 
 
@@ -14,7 +32,7 @@ While height, weight, and BMI are easily obtainable, muscle and fat mass require
 
 Therefore, if we develop an algorithm which can segment muscles and fat through ct images and calculate each mass and volume to diagnose cancer cachexia, it's a great help in early diagnosis of cancer cachexia and, as a result, it's a great contribution to prolonging the lives of patients.
 
-### Goal of project
+### Goal of project <a name="12"></a>
 
 Our goal of project is as follows. 
 
@@ -44,6 +62,7 @@ This dataset consists of 140 computed tomography (CT) scans, each with five orga
 Since the goal of our project is to segment two classes, we decided to use only two of the five classes in public dataset.
 
 About 7000 images were used for training and split by 7:2:1
+
 
 [Public Dataset Link](https://wiki.cancerimagingarchive.net/display/Public/CT-ORG%3A+CT+volumes+with+multiple+organ+segmentations)
 
