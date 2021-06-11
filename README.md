@@ -11,7 +11,6 @@ This project was conducted through machine learning and programming classes at Y
  
 [2. Dataset](#2)
  * [2.1 Public data](#21)
-   * [2.1.1 Public data description](#211)
  * [2.2 Data preprocessing](#22)
  * [2.3 Data augmentation](#23)
  * [2.4 Using balanced weights](#24)
@@ -35,8 +34,6 @@ This project was conducted through machine learning and programming classes at Y
 
 [7. How to use](#7)
  * [7.1 Setup](#71)
-   * [7.1.1 Requirements](#711)
-   * [7.1.2 Directory settings](#712)
  * [7.2 Training](#72)
  * [7.3 Evalutaion](#73)
 
@@ -128,10 +125,25 @@ In this project, two models were tested considering their feasibility and accura
 * ### Semantic segmentation models <a name="31"></a>
 
   We decided to implement and validate the U-NET and DepLabV3+ models with reference to the timeline and accuracy[3] of the semantic segmentation models.
+  ![plot](./images/SemanticSegmentationModels.png)
+  
 * ### U-NET <a name="32"></a>
-
+  U-NET has the advantage of being easy to implement and low computational cost, but it shows low accuracy.
 
 * ### DeepLabV3+ <a name="33"></a>
+  DeepLabV3+ shows relatively high accuracy and compared to similar performance models, the computational cost is low.\For these reasons, we decided to use DeepLabV3+ model in this project. \DeepLabV3+ model has several features and i would like to briefly describe them.
+  
+  * #### Atrous convolution
+    Insert zeros or “hole” between the kernel of convolutional layers to enhance the image resolution
+
+  * #### Atrous Spatial Pyramid Pooling (ASPP)
+    Apply & combine atrous convolutions with different rates in parallel
+
+  * #### Depthwise Separable Convolution
+    Apply the kernel to each individual channel layer only. After disconnecting the channel axis, replace the channel axis with multiple convolution filters that always have a length of 1.
+
+
+
 
 
 ## Results <a name="4"></a>
