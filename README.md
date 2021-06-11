@@ -60,7 +60,7 @@ This project was conducted through machine learning and programming classes at Y
   1. Segment muscle and fat from CT images and compare with ground truth image
   2. Calculate each mass and volume 
   3. Developing an algorithm which can diagnose cancer cachexia from the segmented images and calculated mass and volume
-  4. 
+  
 * ### About prior study <a name="13"></a>
 
   Prior to proceed with the project, prior studies were investigated.
@@ -80,7 +80,7 @@ This project was conducted through machine learning and programming classes at Y
 
   * #### Public data description <a name="211"></a>
 
-    This dataset consists of 140 computed tomography (CT) scans, each with five organs labeled in 3D: lung, bones, liver, kidneys and bladder. The brain is also labeled on the       minority of scans which show it.
+    This dataset consists of 140 computed tomography (CT) scans, each with five organs labeled in 3D: lung, bones, liver, kidneys and bladder. The brain is also labeled on the minority of scans which show it.
 
   Since the goal of our project is to segment two classes, we decided to use only two of the five classes in public dataset.
 
@@ -91,37 +91,74 @@ This project was conducted through machine learning and programming classes at Y
 
 
 * ### Data preprocessing <a name="22"></a>
-  Since public data 
+  We proceed with data pre-processing before training the model.
+  Images were resized to reduce computational cost while maintaing minimum resolution.
+  The original resolution was 512, 512 and the resized resolution was 256, 256.
+
+  For similarity to real data and to avoid unnecessary loss calculation, only two classes of liver and lung are extracted.
+![Data Preprocessing](C:\Users\01091118517\Desktop\DataPreprocessing.png)
+  
 * ### Data Augmentation <a name="23"></a>
+
+
 ## Models <a name="3"></a>
 
 
+
 * ### Semantic segmentation models <a name="31"></a>
+
+
 * ### U-NET <a name="32"></a>
+
+
 * ### DeepLabV3+ <a name="33"></a>
+
+
 ## Results <a name="4"></a>
 
 
 * ### Experimental results <a name="41"></a>
+
+
 * ### Segmented area quantification <a name="42"></a>
+
+
 * ### 3D reconstrucition <a name="43"></a>
+
+
 ## Conclusion <a name="5"></a>
 
 
 * ### Analysis <a name="51"></a>
+
+
 ## Future work <a name="6"></a>
 
 
 * ### Applying to real data <a name="61"></a>
+
+
 * ### 3D model <a name="62"></a>
+
+
 ## How to use <a name="7"></a>
 
 
 * ### Setup <a name="71"></a>
-*   #### Requirements <a name="711"></a>
-*   #### Directory settings <a name="712"></a>
+
+
+*    #### Requirements <a name="711"></a>
+
+
+*    #### Directory settings <a name="712"></a>
+
+
 * ### Training <a name="72"></a>
+
+
 * ### Evalutaion <a name="73"></a>
+
+
 ## Reference <a name="8"></a>
 
 
