@@ -205,16 +205,61 @@ In this project, two models were tested considering their feasibility and accura
 
 
   * #### Requirements <a name="711"></a>
+    Python 3.8 or later with all [requirements.txt](requirements.txt) dependencies installed, including torch>=1.7. To install run:
+    ```Python
+    $ pip install -r requirements.txt
+    ```
+
 
 
   * #### Directory settings <a name="712"></a>
-
-
+    * ##### Training
+    ```bash
+    └── data
+        ├── images
+        │   ├── test
+        │   │   └──image1.png
+        │   ├── train
+        │   │   └──image2.png
+        │   └── val
+        │       └──image3.png
+        └── labels
+            ├── test
+            │   └──image1.png
+            ├── train
+            │   └──image2.png
+            └── val
+                └──image3.png
+    ``` 
+    * ##### Test(Onyl test data)
+    ```bash
+    └── data
+        ├── images
+        │   └── test
+        │       ├── image1.png
+        │       ├── image2.png
+        │       └── image3.png
+        └── labels
+            └── test
+                ├── image1.png
+                ├── image2.png
+                └── image3.png
+    ```
 * ### Training <a name="72"></a>
+  ```Python
+    $ python3 train.py --dataset datasetname        # dataset for training
+                       --use-balanced-weights       # for using balanced weights
+                       --lr  ex)0.001               # learning rate
+                       --resume path/to/checkpoint  # resume training
+  ```
 
 
 * ### Evalutaion <a name="73"></a>
-
+  ```Python
+    $ python3 test.py --dataset datasetname            # dataset for test
+                      --checkpoint path/to/checkpoint  # trained model checkpoint
+                      --outpath path/for/imsave        # directory for predicted images
+  ```
 
 ## Reference <a name="8"></a>
 
