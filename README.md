@@ -162,13 +162,18 @@ In this project, two models were tested considering their feasibility and accura
 * ### Experimental results <a name="41"></a>
   We constructed 5 experiment cases according to which model is used and whether the data augmentation process is conducted. It was shown that DeeplabV3+ model performed better than U-Net and data augmentation improved the segmentation accuracy. U-NET model was trained on colab, using Tesla K80 and DeepLabV+ model was trained on server, using RTX 3090.
   
-  Class1 is Liver and Class2 is Lung and number of patients is 5.
+  * #### Class1 is Liver and Class2 is Lung and number of patients is 5.
   ![plot](./images/ExperimentalResults1.png)
   
-  We also compared the results from five cases qualitatively. The case 5 result was most similar to the corresponding groud-truth.
+  * #### We also compared the results from five cases qualitatively. The case 5 result was most similar to the corresponding groud-truth.
   ![plot](./images/ExperimentalResults2.png)
   
 * ### Segmented area quantification <a name="42"></a>
+  We also quantified the segmented class area in real scale. Because it was not possible to validate the area quantification with the public data, we just present this quantification method. Since Real data include sapcing information, we can apply this method. We first counted the number of pixels for each segmented class, and then, we multiplied it by pixel spacing.
+  ![plot](./images/SegmentedAreaQuantification.png)
+  
+
+  
 
 
 * ### 3D reconstrucition <a name="43"></a>
@@ -195,10 +200,10 @@ In this project, two models were tested considering their feasibility and accura
 * ### Setup <a name="71"></a>
 
 
-*    #### Requirements <a name="711"></a>
+  * #### Requirements <a name="711"></a>
 
 
-*    #### Directory settings <a name="712"></a>
+  * #### Directory settings <a name="712"></a>
 
 
 * ### Training <a name="72"></a>
