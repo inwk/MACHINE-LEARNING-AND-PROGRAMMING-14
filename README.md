@@ -270,30 +270,6 @@ In this project, two models were tested considering their feasibility and accura
 * ### [5] Chen, L. C., Zhu, Y., Papandreou, G., Schroff, F., & Adam, H. (2018). Encoder-decoder with atrous separable convolution for semantic image segmentation
 
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
-
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
-
 - 📫 How to reach me **inwookoh@yonsei.ac.kr**
 
 
