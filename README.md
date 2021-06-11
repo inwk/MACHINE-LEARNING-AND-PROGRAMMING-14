@@ -128,23 +128,33 @@ In this project, two models were tested considering their feasibility and accura
   ![plot](./images/SemanticSegmentationModels.png)
   
 * ### U-NET <a name="32"></a>
-  U-NET has the advantage of being easy to implement and low computational cost, but it shows low accuracy.
+  U-Net is a one of convolutional network for biomedical image segmentation.
+  Segmentation with end-to-end makes the model lighter, faster converge, and less computational cost.
+  The structure of the overall model is called U-NET because it resembles the alphabet U.
+  ![plot](./images/U-NET.png)
+  
 
 * ### DeepLabV3+ <a name="33"></a>
-  DeepLabV3+ shows relatively high accuracy and compared to similar performance models, the computational cost is low.\For these reasons, we decided to use DeepLabV3+ model in this project. \DeepLabV3+ model has several features and i would like to briefly describe them.
+  DeepLabV3+ shows relatively high accuracy and compared to similar performance models, the computational cost is low.
+  For these reasons, we decided to use **DeepLabV3+** model in this project. 
+  DeepLabV3+ model shows good performance in segmentation tasks because of several features as below.
   
   * #### Atrous convolution
+    ![plot](./images/AtrousConvolution.png)
+    
     Insert zeros or “hole” between the kernel of convolutional layers to enhance the image resolution
 
   * #### Atrous Spatial Pyramid Pooling (ASPP)
+    ![plot](./images/ASPP.png)
+    
     Apply & combine atrous convolutions with different rates in parallel
 
   * #### Depthwise Separable Convolution
+    ![plot](./images/DepthwiseSeparableConvolution.png)
+    
     Apply the kernel to each individual channel layer only. After disconnecting the channel axis, replace the channel axis with multiple convolution filters that always have a length of 1.
-
-
-
-
+  
+  
 
 ## Results <a name="4"></a>
 
