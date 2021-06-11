@@ -14,6 +14,7 @@ This project was conducted through machine learning and programming classes at Y
    * [2.1.1 Public data description](#211)
  * [2.2 Data preprocessing](#22)
  * [2.3 Data augmentation](#23)
+ * [2.4 Using balanced weights](#24)
 
 [3. Models](#3)
  * [3.1 Semantic segmentation models](#31)
@@ -109,6 +110,8 @@ This project was conducted through machine learning and programming classes at Y
     
   * #### Augmented images
     ![plot](./images/DataAugmentation.png)
+    
+* ### Using balanced weights <a name="24"></a>
   
     
   
