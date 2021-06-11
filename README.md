@@ -96,9 +96,18 @@ This project was conducted through machine learning and programming classes at Y
   The original resolution was 512, 512 and the resized resolution was 256, 256.
 
   For similarity to real data and to avoid unnecessary loss calculation, only two classes of liver and lung are extracted.
-![Data Preprocessing](C:\Users\01091118517\Desktop\DataPreprocessing.png)
+![plot](./images/DataPreprocessing.png)
   
 * ### Data Augmentation <a name="23"></a>
+
+  To increase the diversity of data, data augmentation is also taken.
+  Considering characteristics of the data, CLAHE[1] and vertical flipping were applied using OPENCV.
+  
+  * #### CLAHE
+    CLAHE(Contrast Limited Adaptive Histogram Equalization) is an image processing technique that adds climlimit to AHE. AHE may cause noise to be amplified in near constant regions. By adding cliplimit, we can solve noise problems
+    
+    
+  
 
 
 ## Models <a name="3"></a>
