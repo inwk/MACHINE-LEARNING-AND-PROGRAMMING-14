@@ -124,7 +124,7 @@ In this project, two models were tested considering their feasibility and accura
 
 * ### Semantic segmentation models <a name="31"></a>
 
-  We decided to implement and validate the U-NET and DepLabV3+ models with reference to the timeline and accuracy[3] of the semantic segmentation models.
+  We decided to implement and validate the U-NET[4] and DepLabV3+[5] models with reference to the timeline and accuracy[3] of the semantic segmentation models.
   ![plot](./images/SemanticSegmentationModels.png)
   
 * ### U-NET <a name="32"></a>
@@ -160,8 +160,14 @@ In this project, two models were tested considering their feasibility and accura
 
 
 * ### Experimental results <a name="41"></a>
-
-
+  We constructed 5 experiment cases according to which model is used and whether the data augmentation process is conducted. It was shown that DeeplabV3+ model performed better than U-Net and data augmentation improved the segmentation accuracy. U-NET model was trained on colab, using Tesla K80 and DeepLabV+ model was trained on server, using RTX 3090.
+  
+  Class1 is Liver and Class2 is Lung and number of patients is 5.
+  ![plot](./images/ExperimentalResults1.png)
+  
+  We also compared the results from five cases qualitatively. The case 5 result was most similar to the corresponding groud-truth.
+  ![plot](./images/ExperimentalResults2.png)
+  
 * ### Segmented area quantification <a name="42"></a>
 
 
