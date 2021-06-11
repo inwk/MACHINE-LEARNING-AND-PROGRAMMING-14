@@ -105,12 +105,10 @@ This project was conducted through machine learning and programming classes at Y
   
   * #### CLAHE
     CLAHE(Contrast Limited Adaptive Histogram Equalization) is an image processing technique that adds climlimit to AHE. AHE may cause noise to be amplified in near constant regions. By adding cliplimit, we can solve noise problems.
-
-![plot](./images/CLAHE.png)
-
+    ![plot](./images/CLAHE.png)
+    
   * #### Augmented images
-
-![plot](./images/DataAugmentation.png)
+    ![plot](./images/DataAugmentation.png)
   
     
   
