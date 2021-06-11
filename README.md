@@ -23,10 +23,8 @@ This project was conducted through machine learning and programming classes at Y
 [4. Results](#4)
  * [4.1 Experimental results](#41)
  * [4.2 Segmented area quantification](#42)
- * [4.3 3d reconstruction](#43)
 
 [5. Conclusion](#5)
- * [5.1 Analysis](#51)
  
 [6. Future work](#6)
  * [6.1 Applying to read data](#61)
@@ -173,25 +171,31 @@ In this project, two models were tested considering their feasibility and accura
   ![plot](./images/SegmentedAreaQuantification.png)
   
 
-  
-
-
-* ### 3D reconstrucition <a name="43"></a>
-
 
 ## Conclusion <a name="5"></a>
 
-
-* ### Analysis <a name="51"></a>
+* ### In this project, we conducted segmentation using two models and improved the performance of the model through data augmentation
+    We confirmed that DeepLabV3+ shows higher accuracy than U-NET.
+    We confirmed that data augmentation improves accuracy of the model.
+* ### Through the predicted segmentation images(L3), we predict area of each class
+    If real data is available later, the same process could be applied to predict segmentation, volume and mass of each class.
+    Public data was not able to validate because there was no information about actual volume, mass and area.
+    But it can be possible to validate the real data since it contains information about real volume, mass and area of each class.
+ 
+* ### Due to data problems and limited time, relatively small dataset was used
+    As we’ve seen with data augmentation, we expect to get better accuracy with larger dataset.
 
 
 ## Future work <a name="6"></a>
 
-
 * ### Applying to real data <a name="61"></a>
+   If real data is available later, we would like segment the image and validate it by applying our trained model.
+   Through segmented images, we would like to predict and validate the volume and mass of each class.
+   If the volume and mass prediction performs well, we could utilize the result to train diagnosis algorithm for cancer cachexia. 
 
-
-* ### 3D model <a name="62"></a>
+* ### 3D Model <a name="62"></a>
+    Since only L3 images are available in real data, we haven’t tried 3D model.
+    If images other than L3 are available in real data, we would like to train the 3D models and compare the accuracy with the 2D models.
 
 
 ## How to use <a name="7"></a>
@@ -214,6 +218,11 @@ In this project, two models were tested considering their feasibility and accura
 
 ## Reference <a name="8"></a>
 
+* ### [1] Reza, A. M. (2004). Realization of the contrast limited adaptive histogram equalization (CLAHE) for real-time image enhancement
+* ### [2] Paszke, Adam, et al. (2016). Enet: A deep neural network architecture for real-time semantic segmentation
+* ### [3] Minaee, Shervin, et al. (2021). Image segmentation using deep learning: A survey
+* ### [4] Ronneberger, O., Fischer, P., & Brox, T. (2015). U-net: Convolutional networks for biomedical image segmentation
+* ### [5] Chen, L. C., Zhu, Y., Papandreou, G., Schroff, F., & Adam, H. (2018). Encoder-decoder with atrous separable convolution for semantic image segmentation
 
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
