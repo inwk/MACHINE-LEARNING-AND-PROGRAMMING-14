@@ -112,18 +112,22 @@ This project was conducted through machine learning and programming classes at Y
     ![plot](./images/DataAugmentation.png)
     
 * ### Using balanced weights <a name="24"></a>
-  
-    
-  
+
+Since data imbalance of each class exists(background is dominant), our model tends to predict everything black. We verified that different weights are needed for each class. 
+We have calculated weights based on different frequencies of each class. 
+
+By the following formular[2], custom weights were calculated.
+
+  <img src="https://latex.codecogs.com/svg.latex?\Large&space;{w_{class}=\frac{1}{ln{(c+p_{freq})}}\hspace{1em}{where\hspace{1em}p_{freq}=\frac{f_{frequency}}{total\;frequency}}"/>
 
 
 ## Models <a name="3"></a>
 
-
+In this project, two models were tested considering their feasibility and accuracy. 
 
 * ### Semantic segmentation models <a name="31"></a>
 
-
+  We decided to implement and validate the U-NET and DepLabV3+ models with reference to the timeline and accuracy[3] of the semantic segmentation models.
 * ### U-NET <a name="32"></a>
 
 
