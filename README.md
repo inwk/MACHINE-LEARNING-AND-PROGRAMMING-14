@@ -205,12 +205,11 @@ In this project, two models were tested considering their feasibility and accura
 
 
   * #### Requirements <a name="711"></a>
-    Python 3.8 or later with all [requirements.txt](requirements.txt) dependencies installed, including torch>=1.7. To install run:
+    Python 3.8 or later with all [requirements.txt](requirements.txt) dependencies installed, including torch>=1.7.\
+    To install run:
     ```Python
     $ pip install -r requirements.txt
     ```
-
-
 
   * #### Directory settings <a name="712"></a>
     * ##### Training
@@ -231,7 +230,7 @@ In this project, two models were tested considering their feasibility and accura
             └── val
                 └──image3.png
     ``` 
-    * ##### Test(Onyl test data)
+    * ##### Test(Onyl test data is needed)
     ```bash
     └── data
         ├── images
