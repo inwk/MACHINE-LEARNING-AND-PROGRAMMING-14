@@ -64,22 +64,23 @@ This project was conducted through machine learning and programming classes at Y
 ## Dataset <a name="2"></a>
 
 
-  Basically, segmentation tasks require ct images and corresponding labeled images. In addition, this project also requires information about mass and volumes for each segmented   class. 
-
-  Since exportation of real data is not approved by IRB, we deciede to use public data instead.
+  Basically, segmentation tasks require ct images and corresponding labeled images. In addition, this project also requires information about mass and volumes for each segmented   class.
+  
+  Real data contains all of this information but exportation of real data is not approved by IRB, we deciede to use public data instead. Because public data does not contain information about mass and volumes, it is possible to predict volume and mass for each segmented class, but it is impossible to verify the predicted results.
+  
+  Therefore, in this project, we only implement an algorithm for predicting volume and mass, and the process of validating it is decided to be applied to real data later.
+  
 
 * ### Public data <a name="21"></a>
 
-  We decided to train a model via public dataset and apply our trained model to real data later.
-
+  We decided to train a model via public dataset and apply our trained model to real data later.\
   Public dataset was selected considering its similarity to real data.
 
   * #### Public data description <a name="211"></a>
 
     This dataset consists of 140 computed tomography (CT) scans, each with five organs labeled in 3D: lung, bones, liver, kidneys and bladder. The brain is also labeled on the minority of scans which show it.
-
-  Since the goal of our project is to segment two classes, we decided to use only two of the five classes in public dataset.
-
+    
+  Since the goal of our project is to segment two classes, we decided to use only two of the five classes in public dataset.\
   About 7000 images were used for training and split by 7:2:1
 
 
@@ -101,6 +102,7 @@ This project was conducted through machine learning and programming classes at Y
   
   * #### CLAHE
     CLAHE(Contrast Limited Adaptive Histogram Equalization) is an image processing technique that adds climlimit to AHE. AHE may cause noise to be amplified in near constant regions. By adding cliplimit, we can solve noise problems.
+    ##### Parameters of CLAHE: clipLimit=2.0, tileGridsize=(8,8)
     ![plot](./images/CLAHE.png)
     
   * #### Augmented images
@@ -109,8 +111,7 @@ This project was conducted through machine learning and programming classes at Y
 * ### Using balanced weights <a name="24"></a>
 
 Since data imbalance of each class exists(background is dominant), our model tends to predict everything black. We verified that different weights are needed for each class. 
-We have calculated weights based on different frequencies of each class. 
-
+We have calculated weights based on different frequencies of each class.\
 By the following formular[2], custom weights were calculated.
 
   <img src="https://latex.codecogs.com/svg.latex?\Large&space;{w_{class}=\frac{1}{ln{(c+p_{freq})}}\hspace{1em}{where\hspace{1em}p_{freq}=\frac{f_{frequency}}{total\;frequency}}"/>
@@ -268,6 +269,9 @@ In this project, two models were tested considering their feasibility and accura
 * ### [4] Ronneberger, O., Fischer, P., & Brox, T. (2015). U-net: Convolutional networks for biomedical image segmentation
 * ### [5] Chen, L. C., Zhu, Y., Papandreou, G., Schroff, F., & Adam, H. (2018). Encoder-decoder with atrous separable convolution for semantic image segmentation
 
+
+
+***
 
 - 📫 How to reach me **inwookoh@yonsei.ac.kr**
 
